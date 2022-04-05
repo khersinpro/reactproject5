@@ -16,10 +16,10 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path='/reactproject5/' element={<Home />} />
-        <Route path='/reactproject5/video' element={<Video />} />
-        <Route path='/reactproject5/tv' element={<Tv />} />
-        <Route path='/reactproject5/bookmark' element={<BookMark />} />
+        <Route path='/reactproject5' element={<Home />} />
+        <Route path='/reactproject5video' element={<Video />} />
+        <Route path='/reactproject5tv' element={<Tv />} />
+        <Route path='/reactproject5bookmark' element={<BookMark />} />
       </Routes>
     </>
   );

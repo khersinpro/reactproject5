@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <nav>
       <img className="test" src={logo} alt="logo" />
-      <NavLink to="/reactproject5/">
+      <NavLink to="/reactproject5">
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8 0H1C.4 0 0 .4 0 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11H1c-.6 0-1 .4-1 1v7c0 
@@ -23,7 +23,7 @@ const NavBar = () => {
           />
         </svg>
       </NavLink>
-      <NavLink to="/reactproject5/video">
+      <NavLink to="/reactproject5video">
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M16.956 0H3.044A3.044 3.044 0 0 0 0 3.044v13.912A3.044 3.044 0 0 0 3.044 20h13.912A3.044 3.044 0 0
@@ -34,7 +34,7 @@ const NavBar = () => {
           />
         </svg>
       </NavLink>
-      <NavLink to="/reactproject5/tv">
+      <NavLink to="/reactproject5tv">
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20 4.481H9.08l2.7-3.278L10.22 0 7 3.909 3.78.029 2.22 1.203l2.7 3.278H0V20h20V4.481Zm-8 
@@ -43,7 +43,7 @@ const NavBar = () => {
           />
         </svg>
       </NavLink>
-      <NavLink to="/reactproject5/bookmark">
+      <NavLink to="/reactproject5bookmark">
         <svg width="17" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M15.387 0c.202 0 .396.04.581.119.291.115.522.295.694.542.172.247.258.52.258.82v17.038c0 
