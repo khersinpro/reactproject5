@@ -1,0 +1,50 @@
+@import "./config.scss";
+@import "./components/navbar.scss";
+@import "./components/trending.scss";
+@import "./components/cardContainer.scss";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+#root{
+    min-height: 100vh;
+    width: 100%;
+    background: $background;
+    position: relative;
+    padding-left: 164px;
+    overflow-y:  scroll;
+}
+.inputContainer{
+    margin: 64px 0 34px;
+    display: flex;
+    align-items: center;
+    input{
+        width: 90%;
+        height: 32px;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        color: $white;
+        outline: none;
+        position: relative;      
+        border-bottom: transparent solid 2px;
+        &::placeholder{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        padding-bottom: 14px;
+        
+        &:focus{
+            border-bottom: rgba(255, 255, 255, 0.5) solid 2px;
+            
+        }
+    }
+    label{
+        margin-right: 24px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+}  

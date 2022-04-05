@@ -1,0 +1,124 @@
+//*********SWIPPER**********//
+
+.swiper{
+    height: 250px;
+    width: 100%;
+}
+.bloc{
+    background: #FFF;
+    width: 470px;
+    height: 230px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    .card__txtContainer{
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 300;
+        margin: 8px 0 5px;
+        position: absolute;
+        top: 170px;
+        left: 24px;
+        span{
+            height: 3px;
+            width: 3px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.75);
+            margin: 0 8px;
+        }
+        .icon-card{
+            width: 12px;
+            height: 12px;
+            margin-right: 6px;
+        }
+    }
+    &:hover .playContainer{
+        display: flex;
+    }
+    .playContainer{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        display: none;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        .playBtn{
+            height: 48px;
+            width: 117px;
+            border-radius: 48px;
+            background: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+        }
+        img{
+            height:30px;
+            width: 30px;
+            margin: 0 19px 0 9px;
+        }
+        p{
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        img{
+            height:30px;
+            width: 30px;
+            margin: 0 19px 0 9px;
+        }
+        p{
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .bookMarked{
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        border-radius: 50%;
+        top: 16px;
+        right: 16px;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+        img{
+            width: 11.64px;
+            height: 14px;
+        }
+    }
+    h3{
+        color: $white;
+        font-weight: 500;
+        font-size: 24px;
+        position: absolute;
+        bottom: 18px;
+        left: 24px;
+    }
+      
+}
+.swiper-slide img {
+    display: bloc;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+//*********SWIPPER**********//
+
+.trending{
+    h1{
+        color: $white;
+        margin-bottom: 25px;
+        font-size: 32px;
+        letter-spacing: -0.5px;
+        font-weight: 300;
+    }
+}
+

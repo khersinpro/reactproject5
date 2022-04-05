@@ -1,0 +1,110 @@
+.cardContainer{
+    width: 100%;
+    height: auto;
+    margin: 40px 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 40px;
+    padding-top: 74px;
+    position: relative;
+    cursor: pointer;
+    h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $white;
+        font-weight: 300;
+        font-size: 32px;
+        letter-spacing: -0.5px;
+    }
+    .card{
+        height:226px ;
+        width: 280px;
+        position: relative;
+        margin: 0 auto 0 0;
+        img{
+            // position: absolute;
+            // z-index: 1;
+            display: block;
+            height: 174px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &__txtContainer{
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 300;
+            margin: 8px 0 5px;
+            span{
+                height: 3px;
+                width: 3px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.75);
+                margin: 0 8px;
+            }
+            .icon-card{
+                width: 12px;
+                height: 12px;
+                margin-right: 6px;
+            }
+        }
+        &:hover .playContainer{
+            display: flex;
+        }
+        .playContainer{
+            position: absolute;
+            height: 174px;
+            width: 100%;
+            justify-content: center;
+            z-index: 3;
+            display: none;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            .playBtn{
+                height: 48px;
+                width: 117px;
+                border-radius: 48px;
+                background: rgba(255, 255, 255, 0.3);
+                display: flex;
+                align-items: center;
+                margin-top: 69px;
+            }
+            img{
+                height:30px;
+                width: 30px;
+                margin: 0 19px 0 9px;
+            }
+            p{
+                color: $white;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .bookMarked{
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            border-radius: 50%;
+            top: 16px;
+            right: 16px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            img{
+                width: 11.64px;
+                height: 14px;
+            }
+        }
+        h3{
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
