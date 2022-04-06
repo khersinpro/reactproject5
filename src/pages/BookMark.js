@@ -3,15 +3,15 @@ import search from "../assets/icon-search.svg";
 import tv from "../assets/icon-category-tv.svg";
 import play from "../assets/icon-play.svg";
 import movie from "../assets/icon-category-movie.svg";
-import bookMarked from "../assets/icon-bookmark-empty.svg";
-import notBookMarked from "../assets/icon-bookmark-full.svg";
+import notBookMarked from "../assets/icon-bookmark-empty.svg";
+import bookMarked from "../assets/icon-bookmark-full.svg";
 import { data } from "../data.js";
 
 const BookMark = () => {
   const dataVideo = data.filter((data) => data.isBookmarked);
   const dataVideoMap = dataVideo.map((data, idx) => (
     <div className="card" key={idx}>
-      <img src={`.${data.thumbnail.regular.large}`} />
+      <img src={`${data.thumbnail.regular.large}`} />
       <div className="card__txtContainer">
         <p>{data.year}</p>
         <span></span>
@@ -44,7 +44,7 @@ const BookMark = () => {
   return (
     <>
       <div className="inputContainer">
-        <label for="search">
+        <label htmlFor="search">
           <img src={search} alt="search-icon" />
         </label>
         <input id="search" placeholder="Search for movies or TV series"></input>

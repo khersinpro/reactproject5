@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Pagination, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { data } from "../data";
@@ -14,10 +14,20 @@ import notBookMarked from '../assets/icon-bookmark-full.svg'
 
 const Swipper = () => {
   const dataTrending = data.filter((data) => data.isTrending);
-  console.log(data);
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 1250px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 1250px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
+
   return (
     <Swiper
-      slidesPerView={"2.5"}
+      slidesPerView={matches ? (2.5) : (1.5)}
       spaceBetween={30}
       freeMode={true}
       modules={[FreeMode]}
@@ -25,7 +35,7 @@ const Swipper = () => {
     >
       {dataTrending.map((data, idx) => (
         <SwiperSlide className="bloc" key={idx}>
-          <img src={`.${data.thumbnail.trending.large}`} />
+          <img src={`${data.thumbnail.trending.large}`} />
           <div className="card__txtContainer">
             <p>{data.year}</p>
             <span></span>
