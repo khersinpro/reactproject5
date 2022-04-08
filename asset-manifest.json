@@ -1,29 +1,25 @@
 {
   "files": {
-    "main.css": "/reactproject5/static/css/main.c8eb8ace.css",
-    "main.js": "/reactproject5/static/js/main.04ee94a4.js",
+    "main.css": "/reactproject5/static/css/main.ce427399.css",
+    "main.js": "/reactproject5/static/js/main.01629737.js",
     "static/js/787.c6006e9a.chunk.js": "/reactproject5/static/js/787.c6006e9a.chunk.js",
     "static/media/large.jpg": "/reactproject5/static/media/large.7dbbfd3564efbdd81ccf.jpg",
     "static/media/medium.jpg": "/reactproject5/static/media/medium.e83a8f8613079eaac3fd.jpg",
     "static/media/small.jpg": "/reactproject5/static/media/small.5ca477474a05ffb3b6e6.jpg",
     "index.html": "/reactproject5/index.html",
     "static/media/icon-category-movie.svg": "/reactproject5/static/media/icon-category-movie.6861d0ce9036ac864b87dc5aff6570c3.svg",
-    "static/media/icon-nav-bookmark.svg": "/reactproject5/static/media/icon-nav-bookmark.518c397356513229db6bfde53a032c4f.svg",
-    "static/media/icon-nav-movies.svg": "/reactproject5/static/media/icon-nav-movies.63f27e162d621942d6680eef9a8222f4.svg",
     "static/media/icon-bookmark-full.svg": "/reactproject5/static/media/icon-bookmark-full.361afed00144e45cd54d64697d9a877d.svg",
-    "static/media/icon-nav-home.svg": "/reactproject5/static/media/icon-nav-home.63838a132c0a94677f989df4b7ba21a5.svg",
     "static/media/icon-search.svg": "/reactproject5/static/media/icon-search.cbc8d670ebd27b023c9868d5850d79c5.svg",
     "static/media/logo.svg": "/reactproject5/static/media/logo.7d4aedc9f44f15655a966567c57a1f37.svg",
     "static/media/icon-category-tv.svg": "/reactproject5/static/media/icon-category-tv.75c9208553d35303e2f1b61b511ab387.svg",
-    "static/media/icon-nav-tv-series.svg": "/reactproject5/static/media/icon-nav-tv-series.ffc93c1d83676154983e453f08793f55.svg",
     "static/media/icon-play.svg": "/reactproject5/static/media/icon-play.8371f8d28787ad27a68ec37af3a6c7b0.svg",
     "static/media/icon-bookmark-empty.svg": "/reactproject5/static/media/icon-bookmark-empty.20ce7177c045bbdbd7948bd9b4220c58.svg",
-    "main.c8eb8ace.css.map": "/reactproject5/static/css/main.c8eb8ace.css.map",
-    "main.04ee94a4.js.map": "/reactproject5/static/js/main.04ee94a4.js.map",
+    "main.ce427399.css.map": "/reactproject5/static/css/main.ce427399.css.map",
+    "main.01629737.js.map": "/reactproject5/static/js/main.01629737.js.map",
     "787.c6006e9a.chunk.js.map": "/reactproject5/static/js/787.c6006e9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8eb8ace.css",
-    "static/js/main.04ee94a4.js"
+    "static/css/main.ce427399.css",
+    "static/js/main.01629737.js"
   ]
 }
