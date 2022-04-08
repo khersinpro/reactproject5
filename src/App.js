@@ -7,7 +7,6 @@ import BookMark from "./pages/BookMark";
 import NavBar from "./components/NavBar";
 
 function App() {
-  // console.log(data.filter(data => data.isTrending));
 
   return (
     <>

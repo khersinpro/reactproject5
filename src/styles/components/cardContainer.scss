@@ -149,4 +149,23 @@
             }
         }
     }
+    .errorHandler{
+        position: absolute;
+        overflow: visible;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            cursor: initial;
+        }
+        p{
+            color: white;
+            height: 25px;
+        }
+    }
 }
+.margin-bookmark{
+    margin: 40px 0 30px;
+    min-height: 300px;
+}
+
