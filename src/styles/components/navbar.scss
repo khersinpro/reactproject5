@@ -27,7 +27,7 @@ nav{
         height: 56px;
     }
     svg{
-        fill: white;
+        fill: #5A698F;;
         height: 20px;
         margin: 20px 0px;
         @media(max-width:768px){
@@ -66,4 +66,11 @@ nav{
             width: 30px;
         }
     }
+    a.active svg{
+        fill: white;
+    }
 }
+
+
+
+

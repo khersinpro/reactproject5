@@ -77,3 +77,23 @@ body{
     }
 
 }  
+
+//************************ ERROR PAGE************************//
+
+.errorPage{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 200px;
+    svg{
+        height: 150px;
+        margin-bottom: 35px;
+    }
+    p{
+        font-size: 30px;
+    }
+}

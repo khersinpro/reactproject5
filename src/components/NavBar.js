@@ -2,10 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import avatar from "../assets/image-avatar.png";
-import movie from "../assets/icon-nav-movies.svg";
-import tv from "../assets/icon-nav-tv-series.svg";
-import bookMark from "../assets/icon-nav-bookmark.svg";
-import home from "../assets/icon-nav-home.svg";
 import { data } from "../data";
 
 const NavBar = () => {
@@ -13,7 +9,7 @@ const NavBar = () => {
   return (
     <nav>
       <img className="test" src={logo} alt="logo" />
-      <NavLink to="/reactproject5">
+      <NavLink to="/reactproject5/">
         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8 0H1C.4 0 0 .4 0 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1Zm0 11H1c-.6 0-1 .4-1 1v7c0 

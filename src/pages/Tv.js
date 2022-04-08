@@ -1,12 +1,12 @@
 import React, { useState , useEffect} from "react";
+import { data } from "../data";
+import { gsap } from "gsap";
 import search from "../assets/icon-search.svg";
 import tv from "../assets/icon-category-tv.svg";
 import play from "../assets/icon-play.svg";
 import movie from "../assets/icon-category-movie.svg";
 import notBookMarked from "../assets/icon-bookmark-empty.svg";
 import bookMarked from "../assets/icon-bookmark-full.svg";
-import {gsap} from "gsap";
-import { data } from "../data";
 
 const Tv = () => {
   const [dataVideo, setDataVideo] = useState(
@@ -15,12 +15,10 @@ const Tv = () => {
 
   useEffect(() => {
     const TL1 = gsap.timeline({paused: true});
-  
     TL1
     .from(document.querySelector(".inputContainer"), {opacity: 0, duration: 1,y:-20})
     .from(document.querySelector(".cardContainer h2"), {opacity: 0, duration: 0.8,y:-20, ease: "power4"},'-=0.8')
     .from(document.querySelectorAll(".card"), {stagger: 0.02, opacity: 0, duration: 0.6, y:-20 }, "-=0.8")
-
     TL1.play()
   }, [])
   
@@ -38,11 +36,11 @@ const Tv = () => {
 
   const dataVideoMap = dataVideo.map((data, idx) => (
     <div className="card" key={idx}>
-      <img src={`${data.thumbnail.regular.large}`} />
+      <img src={`${data.thumbnail.regular.large}`} alt={data.title} />
       <div className="card__txtContainer">
         <p>{data.year}</p>
         <span></span>
-        {data.category == "TV Series" ? (
+        {data.category === "TV Series" ? (
           <img className="icon-card" src={tv} alt="tv-icon" />
         ) : (
           <img className="icon-card" src={movie} alt="icon-movie" />
