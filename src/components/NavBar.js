@@ -2,10 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import avatar from "../assets/image-avatar.png";
-import { data } from "../data";
 
 const NavBar = () => {
-  console.log(data);
   return (
     <nav>
       <img className="test" src={logo} alt="logo" />

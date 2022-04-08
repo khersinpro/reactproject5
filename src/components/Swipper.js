@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import { Pagination, FreeMode } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { data } from "../data";
+import { FreeMode } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -35,11 +35,11 @@ const Swipper = () => {
     >
       {dataTrending.map((data, idx) => (
         <SwiperSlide className="bloc" key={idx}>
-          <img src={`${data.thumbnail.trending.large}`} />
+          <img src={`${data.thumbnail.trending.large}`} alt={data.title} />
           <div className="card__txtContainer">
             <p>{data.year}</p>
             <span></span>
-            {data.category == "TV Series" ? (
+            {data.category === "TV Series" ? (
               <img className="icon-card" src={tv} alt="tv-icon" />
             ) : (
               <img className="icon-card" src={movie} alt="icon-movie" />

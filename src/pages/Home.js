@@ -27,7 +27,6 @@ const Home = () => {
     .from(document.querySelector(".trending"), {opacity: 0, duration: 1,y:-20},'-=0.8')
     .from(document.querySelector(".cardContainer h2"), {opacity: 0, duration: 0.8,y:-20, ease: "power4"},'-=0.8')
     .from(document.querySelectorAll(".card"), {stagger: 0.02, opacity: 0, duration: 0.7, y:-30 }, "-=0.8")
-    console.log(document.querySelector(".trending"));
     TL1.play()
   }, [])
   
