@@ -2,7 +2,7 @@ import React from 'react'
 
 const ErrorPage = () => {
   return (
-    <div className="errorPage">
+    <main className="errorPage">
 
             <svg xmlns="http://www.w3.org/2000/svg" stroke="white" fill="white" viewBox="0 0 32 32">
               <path d="M16 2a14 14 0 0 0-7.54 2.2 1 1 0 0 0 1.08 1.69 12 12 0 1 1-3.65 3.65 10.12 10.12 0 0 1 .65-.92A1 1 0 1 0 5 
@@ -13,7 +13,7 @@ const ErrorPage = () => {
             </svg>
 
             <p>No results found</p>
-    </div>
+    </main>
   )
 }
 

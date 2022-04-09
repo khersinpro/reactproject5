@@ -105,7 +105,7 @@ const BookMark = () => {
     </div> ));
 
   return (
-    <>
+    <main>
       <div className="inputContainer">
         <label htmlFor="search" >
           <img src={search} alt="search-icon" />
@@ -148,8 +148,8 @@ const BookMark = () => {
           </div>
         )}
       </section>
-      
-    </>
+
+    </main>
   );
 };
 

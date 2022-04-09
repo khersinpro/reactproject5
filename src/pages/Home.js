@@ -62,7 +62,7 @@ const Home = () => {
     </div>
   ))
   return (
-    <>
+    <main>
         <div className='inputContainer'>
             <label htmlFor="search"><img src={search} alt="search-icon" /></label>
             <input onChange={dataHandler} id="search" placeholder='Search for movies or TV series'></input>
@@ -84,7 +84,7 @@ const Home = () => {
             <p>No results found</p>
           </div>)}
         </section>
-    </>
+    </main>
   )
 }
 

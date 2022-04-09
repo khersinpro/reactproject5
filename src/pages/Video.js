@@ -67,7 +67,7 @@ const Video = () => {
     </div>
   ));
   return (
-    <>
+    <main>
     
       <div className="inputContainer">
         <label htmlFor="search">
@@ -100,7 +100,7 @@ const Video = () => {
         )}
       </section>
 
-    </>
+    </main>
   );
 };
 

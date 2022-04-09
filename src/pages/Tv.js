@@ -67,7 +67,7 @@ const Tv = () => {
     </div>
   ));
   return (
-    <>
+    <main>
       <div className="inputContainer">
         <label htmlFor="search">
           <img src={search} alt="search-icon" />
@@ -100,7 +100,7 @@ const Tv = () => {
           </div>
         )}
       </section>
-    </>
+    </main>
   );
 };
 
