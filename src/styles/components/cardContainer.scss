@@ -40,9 +40,9 @@
         position: relative;
         border-radius: 8px;
         overflow: hidden;
-        height: 226px;
+        height: 230px;
         @media(max-width: 500px) {
-            height: 154px;
+            height: 160px;
         }
         img{
             display: block;
@@ -76,6 +76,12 @@
                 @media(max-width: 600px) {
                     font-size: 11px;
                 }
+                @media(max-width: 530px){
+                    font-size: 10px;
+                }
+                @media(max-width: 360px){
+                    font-size: 9px;
+                }
             
             }
             .icon-card{
@@ -101,6 +107,9 @@
             top: 0;
             left: 0;
             background: rgba(0, 0, 0, 0.5);
+            @media(max-width: 500px){
+                height: 110px;
+            }
             .playBtn{
                 height: 48px;
                 width: 117px;
@@ -109,11 +118,20 @@
                 display: flex;
                 align-items: center;
                 margin-top: 69px;
+                @media(max-width: 500px){
+                    margin-top: 31px;
+                    height: 38px;
+                    width: 90px;
+                }
             }
             img{
                 height:30px;
                 width: 30px;
                 margin: 0 19px 0 9px;
+                @media(max-width: 500px){
+                    margin: 0 8px 0 6px;
+                    
+                }
             }
             p{
                 color: $white;
@@ -137,13 +155,23 @@
                 width: 11.64px;
                 height: 14px;
             }
+            @media(max-width: 500px){
+                top: 5px;
+                right: 5px;
+            }
         }
         h3{
             color: $white;
             font-weight: 500;
             font-size: 18px;
+            @media(max-width: 600px) {
+                font-size: 15px;
+            }
             @media(max-width: 525px) {
                 font-size: 14px;
+            }
+            @media(max-width: 360px){
+                font-size: 12px;
             }
         }
     }
